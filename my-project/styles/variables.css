@@ -1,0 +1,61 @@
+.changeTheme {
+    margin-top: 30rem;
+}
+
+.storedisplay {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+}
+
+.card {
+    justify-content: space-between;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid var(--cardborder) 3px;
+    border-radius: 8px;
+    margin-top: 3rem;
+    width: 90vw;
+    height: 90vw;
+    max-width: 30%;
+    background-color: #fff;
+    padding: 50px;
+    height: 30vw;
+}
+
+.card:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s linear;
+}
+
+.itemimg {
+    width: 90%;
+    align-self: center;
+    padding: 20px;
+}
+
+.itemname {
+    font-size: var(--h2);
+}
+
+.itemcolor {
+    font-size: var(--h3);
+    color: var(--cardborder);
+}
+
+.price {
+    font-size: var(--h4);
+}
+
+.outofstock {
+    color: rgb(218, 98, 98);
+    font-size: var(--h4);
+    font-style: italic;
+}

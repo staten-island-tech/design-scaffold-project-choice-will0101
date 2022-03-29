@@ -1,0 +1,142 @@
+@import url(variables.css);
+:root {
+    --poppins: font-family: 'Poppins', sans-serif;
+    --light-purple: rgb(177, 156, 217);
+    --lighter-purple: rgb(221, 211, 238);
+    --dark-purple: rgb(148, 119, 203);
+    --darker-purple: rgb(133, 101, 196);
+    --text-purple: rgb(89, 44, 179);
+    --light-green: rgb(201, 224, 174);
+    --lighter-green: rgb(249, 251, 245);
+    --darker-green: rgb(148, 186, 75);
+    --text-green: rgb(92, 131, 19);
+    --dark-green: rgb(165, 197, 103);
+    --white: #eee;
+    --purple: rgb(115, 91, 146);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline: .2rem solid rgba(77, 77, 77, 0.1);
+    --h1: 1.853rem;
+    --h2: 1.453rem;
+    --h3: 1.363rem;
+    --h4: 1.25rem;
+}
+
+body {
+    --background: var(--light-green);
+    --itemname: var(--dark-green);
+    --cardborder: var(--darker-green);
+    --cardbck: var(--lighter-green);
+    --mode: var(--purple);
+    color: var(--text-green);
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.purple {
+    --background: var(--light-purple);
+    --itemname: var(--dark-purple);
+    --cardborder: var(--darker-purple);
+    --cardbck: var(--lighter-purple);
+    --mode: var(--white);
+    color: var(--text-purple);
+    background: rgb(115, 91, 146);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.header {
+    font: var(--poppins);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 10%;
+    background: var(--cardbck);
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: var(--border);
+    color: solid rgba(77, 77, 77, 0.1);
+}
+
+.header button {
+    font-size: 1rem;
+    margin: 0.1rem;
+    color: var(--itemname);
+    background-color: transparent;
+}
+
+.header button:hover {
+    color: var(--background);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+}
+
+.label {
+    background-color: var(--itemname);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+}
+
+.ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transition: transform 0.1s linear;
+}
+
+h1 {
+    font-size: var(--h1);
+    margin: 5rem;
+    text-align: center;
+}
+
+
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+  
