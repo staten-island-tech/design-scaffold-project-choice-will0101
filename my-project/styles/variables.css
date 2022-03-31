@@ -32,7 +32,7 @@
 .card:hover {
     transform: translate(-10px, -10px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s linear;
+    transition: all 0.3s;
 }
 
 .itemimg {

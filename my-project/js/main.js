@@ -34,7 +34,8 @@ DOMSelectors.shoes.addEventListener('click', function() {
     const shoes = store.filter((store) => store.category === "shoe");
     DOMSelectors.shop.innerHTML = ""
     shoes.forEach((shoe) => {
-        DOMSelectors.shop.insertAdjacentHTML("afterbegin", `<article class="card">
+        DOMSelectors.shop.insertAdjacentHTML("afterbegin", `<article 
+            class="card flex flex-wrap bg-red-700">
     <h2 class="itemname">${shoe.name}</h2>
     <h3 class="itemcolor">${shoe.color}</h3>
     <img class="itemimg" src="${shoe.img}" alt="${store.name}"/>
