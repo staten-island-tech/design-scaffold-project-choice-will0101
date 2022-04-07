@@ -1,13 +1,5 @@
 @import url(variables.css);
 
-body {
-    --background: var(--light-green);
-    --itemname: var(--dark-green);
-    --cardborder: var(--darker-green);
-    --cardbck: var(--lighter-green);
-    --mode: var(--purple);
-    color: var(--text-green);
-}
 
 * {
     font-family: "Poppins", sans-serif;
@@ -29,12 +21,18 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1rem 10%;
-    background: var(--cardbck);
+    background: #d8ae6d;
     box-shadow: var(--box-shadow);
+    border: solid #9f8677 3px;
 }
 
+.logoimgtop {
+    height: 20px;
+}
 
-
+.favstar {
+    height: 15px;
+}
 
 
 #app {

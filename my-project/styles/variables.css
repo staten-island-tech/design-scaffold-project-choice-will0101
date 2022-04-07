@@ -18,15 +18,16 @@
     align-self: center;
     display: flex;
     flex-wrap: wrap;
-    border: solid var(--cardborder) 3px;
+    border: solid #eddbad 3px;
     border-radius: 8px;
     margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
     width: 90vw;
-    height: 90vw;
-    max-width: 30%;
-    background-color: #fff;
+    height: 50%;
+    max-width: 40%;
+    background-color: #d8ae6d;
     padding: 50px;
-    height: 30vw;
 }
 
 .card:hover {
@@ -37,25 +38,24 @@
 
 .itemimg {
     width: 90%;
-    align-self: center;
-    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 	#9f8677 6px;
+    border-radius: 8px;
 }
 
 .itemname {
     font-size: var(--h2);
+    padding: 20px;
 }
 
 .itemcolor {
     font-size: var(--h3);
     color: var(--cardborder);
+    padding: 20px;
 }
 
-.price {
+.year {
     font-size: var(--h4);
-}
-
-.outofstock {
-    color: rgb(218, 98, 98);
-    font-size: var(--h4);
-    font-style: italic;
+    padding: 20px;
 }
