@@ -3,7 +3,8 @@ import { store } from "./shop";
 console.log(store);
 const DOMSelectors = {
     all: document.getElementById("all"),
-    outofstock: document.getElementById("featured"),
+    all2: document.getElementById("all2"),
+    loved: document.getElementById("featured"),
     classics: document.getElementById("classic"),
     modern: document.getElementById("modern"),
     checkbox: document.querySelector('.checkbox'),
@@ -11,14 +12,20 @@ const DOMSelectors = {
     featured: document.querySelector('.home'),
     card: document.querySelector('.card'),
     year: document.querySelector('.year'),
+    searchbar: document.getElementById("searchBar"),
 }
 
-DOMSelectors.checkbox.addEventListener('change', () => {
-    document.body.classList.toggle('purple');
-});
 
 window.addEventListener("DOMContentLoaded", function() {
     displayItems(store);
+});
+
+DOMSelectors.all.addEventListener('click', function() {
+    displayItems(store)
+});
+
+DOMSelectors.all2.addEventListener('click', function() {
+    displayItems(store)
 });
 
 function displayItems(store) {
@@ -48,10 +55,6 @@ DOMSelectors.classics.addEventListener('click', function() {
     });
 });
 
-DOMSelectors.all.addEventListener('click', function() {
-    displayItems(store)
-});
-
 DOMSelectors.modern.addEventListener('click', function() {
     const modern = store.filter((store) => store.category === "modern");
     DOMSelectors.shop.innerHTML = ""
@@ -65,15 +68,15 @@ DOMSelectors.modern.addEventListener('click', function() {
     });
 });
 
-DOMSelectors.outofstock.addEventListener('click', function() {
-    const outofstock = store.filter((store) => store.loved === false);
+DOMSelectors.loved.addEventListener('click', function() {
+    const loved = store.filter((store) => store.loved === false);
     DOMSelectors.shop.innerHTML = ""
-    outofstock.forEach((outitem) => {
+    loved.forEach((heart) => {
         DOMSelectors.shop.insertAdjacentHTML("afterbegin", `<article class="card">
-    <h2 class="itemname">${outitem.name}</h2>
-    <h3 class="itemcolor">${outitem.color}</h3>
-    <img class="itemimg" src="${outitem.img}"alt="${outitem.name}"/>
-    <h4 class="year">${outitem.year} <span class="outofstock"> <img class="favstar" src="https://freepngimg.com/save/608-gold-star-png-image/256x256"</span></h4>
+    <h2 class="itemname">${heart.name}</h2>
+    <h3 class="itemcolor">${heart.color}</h3>
+    <img class="itemimg" src="${heart.img}"alt="${heart.name}"/>
+    <h4 class="year">${heart.year} <span class="outofstock"> <img class="favstar" src="https://freepngimg.com/save/608-gold-star-png-image/256x256"</span></h4>
     </article>`)
     });
 });

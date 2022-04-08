@@ -22,7 +22,7 @@
     justify-content: space-between;
     padding: 1rem 10%;
     background: #d8ae6d;
-    box-shadow: var(--box-shadow);
+    box-shadow: gray;
     border: solid #9f8677 3px;
 }
 
@@ -43,4 +43,3 @@
     color: #2c3e50;
     margin-top: 60px;
   }
-  

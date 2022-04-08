@@ -28,12 +28,24 @@
     max-width: 40%;
     background-color: #d8ae6d;
     padding: 50px;
+
+    animation: unfold 1s;
 }
+
+@keyframes unfold {
+    from{
+      transform: rotateX(90deg)
+    }
+    to {
+      transform: rotateX(00deg)
+    }
+  }
+  
 
 .card:hover {
     transform: translate(-10px, -10px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s;
+    transition: 0.3s;
 }
 
 .itemimg {
