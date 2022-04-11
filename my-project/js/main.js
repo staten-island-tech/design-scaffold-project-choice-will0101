@@ -13,7 +13,9 @@ const DOMSelectors = {
     card: document.querySelector('.card'),
     year: document.querySelector('.year'),
     searchbar: document.getElementById("searchBar"),
+    itemimg: document.getElementById("itemimg")
 }
+
 
 
 window.addEventListener("DOMContentLoaded", function() {
@@ -69,7 +71,7 @@ DOMSelectors.modern.addEventListener('click', function() {
 });
 
 DOMSelectors.loved.addEventListener('click', function() {
-    const loved = store.filter((store) => store.loved === false);
+    const loved = store.filter((store) => store.loved === true);
     DOMSelectors.shop.innerHTML = ""
     loved.forEach((heart) => {
         DOMSelectors.shop.insertAdjacentHTML("afterbegin", `<article class="card">

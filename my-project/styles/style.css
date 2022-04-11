@@ -9,10 +9,15 @@
     outline: none;
     border: none;
     text-decoration: none;
+    background-color: #eddbad;
+}
+
+.navbar, .logoimgtop {
+    background: #d8ae6d;
+    align-content: space-between;
 }
 
 .header {
-    font: var(--poppins);
     position: fixed;
     top: 0;
     left: 0;
@@ -21,8 +26,13 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem 10%;
-    background: #d8ae6d;
     box-shadow: gray;
+    border: solid #9f8677 3px;
+    background: #d8ae6d;
+}
+
+.filterbtn {
+    padding: 5px;
     border: solid #9f8677 3px;
 }
 

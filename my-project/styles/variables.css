@@ -10,22 +10,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 90vw;
 }
 
 .card {
-    justify-content: space-between;
-    align-self: center;
+    justify-content:space-between;
+    align-self: justify;
     display: flex;
     flex-wrap: wrap;
-    border: solid #eddbad 3px;
+    border: solid #9f8677 3px;
     border-radius: 8px;
     margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
-    width: 90vw;
+    width: 100vw;
     height: 50%;
-    max-width: 40%;
+    max-width: 45%;
     background-color: #d8ae6d;
     padding: 50px;
 
@@ -58,16 +57,21 @@
 
 .itemname {
     font-size: var(--h2);
+    color: #3c2d1c;
     padding: 20px;
+    background-color: #d8ae6d;
 }
 
 .itemcolor {
     font-size: var(--h3);
-    color: var(--cardborder);
+    background-color: #d8ae6d;
+    color: #3c2d1c;
     padding: 20px;
 }
 
 .year {
     font-size: var(--h4);
     padding: 20px;
+    background-color: #d8ae6d;
+    color: #3c2d1c;
 }
