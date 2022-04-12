@@ -9,10 +9,13 @@
     outline: none;
     border: none;
     text-decoration: none;
+}
+
+.all, .checkbox {
     background-color: #eddbad;
 }
 
-.navbar, .logoimgtop {
+.navbar, .logo {
     background: #d8ae6d;
     align-content: space-between;
 }

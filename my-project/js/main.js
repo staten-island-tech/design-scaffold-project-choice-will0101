@@ -13,10 +13,8 @@ const DOMSelectors = {
     card: document.querySelector('.card'),
     year: document.querySelector('.year'),
     searchbar: document.getElementById("searchBar"),
-    itemimg: document.getElementById("itemimg")
+    itemimg: document.getElementsByClassName("itemimg")
 }
-
-
 
 window.addEventListener("DOMContentLoaded", function() {
     displayItems(store);
@@ -41,7 +39,6 @@ function displayItems(store) {
     });
     displayStore = displayStore.join("");
     DOMSelectors.shop.innerHTML = displayStore;
-    console.log(displayStore);
 };
 
 DOMSelectors.classics.addEventListener('click', function() {
@@ -53,6 +50,7 @@ DOMSelectors.classics.addEventListener('click', function() {
     <h3 class="itemcolor">${classic.color}</h3>
     <img class="itemimg" src="${classic.img}" alt="${store.name}"/>
     <h4 class="year">${classic.year}</h4>
+    <h5 class="bio">${classic.bio}</h5>
     </article>`)
     });
 });
@@ -66,6 +64,7 @@ DOMSelectors.modern.addEventListener('click', function() {
         <h3 class="itemcolor">${modern.color}</h3>
         <img class="itemimg" src="${modern.img}" alt="${store.name}"/>
         <h4 class="year">${modern.year}</h4>
+        <h5 class="bio">${modern.bio}</h5>
         </article>`)
     });
 });
@@ -79,6 +78,7 @@ DOMSelectors.loved.addEventListener('click', function() {
     <h3 class="itemcolor">${heart.color}</h3>
     <img class="itemimg" src="${heart.img}"alt="${heart.name}"/>
     <h4 class="year">${heart.year} <span class="outofstock"> <img class="favstar" src="https://freepngimg.com/save/608-gold-star-png-image/256x256"</span></h4>
+    <h5 class="bio">${heart.bio}</h5>
     </article>`)
     });
 });

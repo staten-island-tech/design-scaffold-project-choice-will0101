@@ -53,25 +53,18 @@
     margin-right: auto;
     border: solid 	#9f8677 6px;
     border-radius: 8px;
+    height: 27.5rem;
 }
 
-.itemname {
-    font-size: var(--h2);
-    color: #3c2d1c;
-    padding: 20px;
-    background-color: #d8ae6d;
-}
-
-.itemcolor {
-    font-size: var(--h3);
-    background-color: #d8ae6d;
-    color: #3c2d1c;
-    padding: 20px;
-}
-
-.year {
+.year, .bio, .itemcolor, .itemname {
     font-size: var(--h4);
     padding: 20px;
     background-color: #d8ae6d;
     color: #3c2d1c;
+}
+
+.bio {
+    border: solid #9f8677 4px;
+    border-radius: 8px;
+    background: #eddbad;
 }
