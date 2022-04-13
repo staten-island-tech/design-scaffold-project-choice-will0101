@@ -12,11 +12,11 @@
 }
 
 .all, .checkbox {
-    background-color: #eddbad;
+    background-color: #300724;
 }
 
 .navbar, .logo {
-    background: #d8ae6d;
+    background: #300724;
     align-content: space-between;
 }
 
@@ -30,13 +30,14 @@
     justify-content: space-between;
     padding: 1rem 10%;
     box-shadow: gray;
-    border: solid #9f8677 3px;
-    background: #d8ae6d;
+    background: #300724;
 }
 
 .filterbtn {
+    background: #FFBC80;
     padding: 5px;
-    border: solid #9f8677 3px;
+    border: solid #FF9F45 3px;
+    border-radius: 8px;
 }
 
 .logoimgtop {
@@ -47,6 +48,9 @@
     height: 15px;
 }
 
+.bigphoto{
+    width: 100%;
+}
 
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;

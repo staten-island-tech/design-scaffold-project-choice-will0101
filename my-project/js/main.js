@@ -30,10 +30,10 @@ DOMSelectors.all2.addEventListener('click', function() {
 
 function displayItems(store) {
     let displayStore = store.map(function(item) {
-        return `<article class="card">
+        return `<article class="card wide">
     <h2 class="itemname">${item.name}</h2>
+    <img class="itemimg big" src="${item.img}" alt="${item.name}"/>
     <h3 class="itemcolor">${item.color}</h3>
-    <img class="itemimg" src="${item.img}" alt="${item.name}"/>
     <h4 class="year">${item.year}</h4>
     </article>`
     });
