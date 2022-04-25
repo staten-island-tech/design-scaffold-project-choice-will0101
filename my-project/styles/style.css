@@ -11,6 +11,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .all, .checkbox {
     background-color: #300724;
 }
