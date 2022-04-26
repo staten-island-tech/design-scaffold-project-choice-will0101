@@ -16,11 +16,11 @@ html {
 }
 
 .all, .checkbox {
-    background-color: #300724;
+    background-color: #f13d35;
 }
 
-.navbar, .logo {
-    background: #300724;
+.logo {
+    background: #f13d35;
     align-content: space-between;
 }
 
@@ -32,16 +32,19 @@ html {
     z-index: 2;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 10%;
+    padding-left: 5rem;
+    padding-right: 5rem;
     box-shadow: gray;
-    background: #300724;
+    background: #f13d35;
 }
 
 .filterbtn {
-    background: #FFBC80;
-    padding: 5px;
-    border: solid #FF9F45 3px;
-    border-radius: 8px;
+    background: beige;
+    padding-left: 1rem; padding-right: 1rem;
+}
+
+.filterbtn:hover {
+    background: #f13d35;
 }
 
 .logoimgtop {
