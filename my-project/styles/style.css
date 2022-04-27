@@ -16,7 +16,7 @@ html {
 }
 
 .all, .checkbox {
-    background-color: #f13d35;
+    background-color: beige;
 }
 
 .logo {
@@ -34,13 +34,14 @@ html {
     justify-content: space-between;
     padding-left: 5rem;
     padding-right: 5rem;
+    padding: 1rem;
     box-shadow: gray;
     background: #f13d35;
 }
 
 .filterbtn {
     background: beige;
-    padding-left: 1rem; padding-right: 1rem;
+    padding: 1rem
 }
 
 .filterbtn:hover {
@@ -57,6 +58,27 @@ html {
 
 .bigphoto{
     width: 100%;
+}
+
+
+.box {
+    background: bisque;
+    padding-left: 20rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-right: 20rem;
+    margin-top: 5rem;
+}
+
+.mapcontainer {
+    display: flex;
+    align-content: center;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 20%;
+    margin-left: 20%;
+    height: 40rem;
 }
 
 #app {
