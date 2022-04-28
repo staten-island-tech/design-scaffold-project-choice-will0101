@@ -19,6 +19,11 @@ html {
     background-color: beige;
 }
 
+.scrollbreak{
+    height: 50px;
+    background-color: beige;
+}
+
 .logo {
     background: #f13d35;
     align-content: space-between;
@@ -70,7 +75,17 @@ html {
     margin-top: 5rem;
 }
 
-.mapcontainer {
+.boxalt {
+    background: beige;
+    padding-left: 20rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-right: 20rem;
+    margin-top: 5rem;
+}
+
+.card {
+    background: bisque;
     display: flex;
     align-content: center;
     position: relative;

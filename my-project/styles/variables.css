@@ -12,23 +12,6 @@
     justify-content: space-around;
 }
 
-.card {
-    justify-content:space-between;
-    align-self: justify;
-    display: flex;
-    flex-wrap: wrap;
-    border: solid #9f8677 3px;
-    border-radius: 8px;
-    margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50%;
-    max-width: 45%;
-    background-color: #d8ae6d;
-    padding: 50px;
-
-    animation: unfold 1s;
-}
 
 .wide{
     width: 100vw;
@@ -45,11 +28,7 @@
   }
   
 
-.card:hover {
-    transform: translate(-10px, -10px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
-}
+
 
 .itemimg {
     width: 95%;
