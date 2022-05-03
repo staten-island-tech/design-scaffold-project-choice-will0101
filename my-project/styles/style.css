@@ -1,14 +1,11 @@
-@import url(variables.css);
-
 
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Patua One', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
     border: none;
-    text-decoration: none;
 }
 
 html {
@@ -25,7 +22,7 @@ html {
 }
 
 .logo {
-    background: #f13d35;
+    background: cadetblue;
     align-content: space-between;
 }
 
@@ -41,16 +38,17 @@ html {
     padding-right: 5rem;
     padding: 1rem;
     box-shadow: gray;
-    background: #f13d35;
+    background: cadetblue;
 }
 
 .filterbtn {
     background: beige;
+    color: cadetblue;
     padding: 1rem
 }
 
 .filterbtn:hover {
-    background: #f13d35;
+    background: burlywood;
 }
 
 .logoimgtop {
@@ -67,7 +65,8 @@ html {
 
 
 .box {
-    background: bisque;
+    color: beige;
+    background: cadetblue;
     padding-left: 20rem;
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -76,6 +75,7 @@ html {
 }
 
 .boxalt {
+    color:cadetblue;
     background: beige;
     padding-left: 20rem;
     padding-top: 10rem;
@@ -84,16 +84,23 @@ html {
     margin-top: 5rem;
 }
 
-.card {
-    background: bisque;
+.mapcontainer{
     display: flex;
-    align-content: center;
-    position: relative;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-right: 20%;
+    flex-wrap: wrap;
+    background-color: bisque;
     margin-left: 20%;
-    height: 40rem;
+    margin-right: 20%;
+}
+
+.mapembed{
+    height: 40vw;
+    width: auto;
+}
+
+.mapscroller{
+    height:100%;
+    width: 600px;
+    border:1px solid #ccc;
 }
 
 #app {
