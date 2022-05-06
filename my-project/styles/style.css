@@ -119,6 +119,11 @@ html {
     background: beige;
 }
 
+.mapcardalt{
+    color: beige;
+    background: cadetblue;
+}
+
 .mapcardimg{
     padding-top: 2%;
     width: 100%;
