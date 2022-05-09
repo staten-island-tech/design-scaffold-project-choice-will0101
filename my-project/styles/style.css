@@ -26,6 +26,12 @@ html {
     background-color: cadetblue;
 }
 
+.scrollbreakcardaltvert{
+    width: 50px;
+    height: 100%;
+    background-color: beige;
+}
+
 .logo {
     background: cadetblue;
     align-content: space-between;
@@ -70,6 +76,8 @@ html {
 
 
 .box {
+    display: flex;
+    flex-wrap: wrap;
     color: beige;
     background: cadetblue;
     padding-left: 20rem;
@@ -80,6 +88,8 @@ html {
 }
 
 .boxalt {
+    display: flex;
+    flex-wrap: wrap;
     color:cadetblue;
     background: beige;
     padding-left: 20rem;
@@ -113,8 +123,17 @@ html {
     border: 8px solid cadetblue;
 }
 
+.entscroller{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: wrap;
+    height: 600px;
+    width: 100%;
+    border: 8px solid beige;
+}
+
+
 .mapcard{
-    display: inline-block;
     color: cadetblue;
     background: beige;
 }
@@ -124,9 +143,19 @@ html {
     background: cadetblue;
 }
 
+.ent{
+    height: 100%;
+    width: 400px;
+}
+
 .mapcardimg{
-    padding-top: 2%;
     width: 100%;
+    border: 8px solid beige;
+}
+
+.mapcardimgalt{
+    width: 100%;
+    border: 8px solid cadetblue;
 }
 
 .cardpadclass{
@@ -134,6 +163,10 @@ html {
     padding-bottom: 2%;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+p{
+    margin: 5%;
 }
 
 #app {
