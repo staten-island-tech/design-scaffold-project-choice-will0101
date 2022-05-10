@@ -1,3 +1,8 @@
+:root {
+    --color-main1: cadetblue;
+    --color-alt1: beige;
+}
+
 
 * {
     font-family: 'Patua One', cursive;
@@ -13,27 +18,27 @@ html {
 }
 
 .all, .checkbox {
-    background-color: beige;
+    background-color: var(--color-alt1);
 }
 
 .scrollbreak{
     height: 50px;
-    background-color: beige;
+    background-color: var(--color-alt1);
 }
 
 .scrollbreakcard{
     height: 50px;
-    background-color: cadetblue;
+    background-color: var(--color-main1);
 }
 
 .scrollbreakcardaltvert{
     width: 50px;
     height: 100%;
-    background-color: beige;
+    background-color: var(--color-alt1);
 }
 
 .logo {
-    background: cadetblue;
+    background: var(--color-main1);
     align-content: space-between;
 }
 
@@ -53,8 +58,8 @@ html {
 }
 
 .filterbtn {
-    background: beige;
-    color: cadetblue;
+    background: var(--color-alt1);
+    color: var(--color-main1);
     padding: 1rem
 }
 
@@ -78,8 +83,8 @@ html {
 .box {
     display: flex;
     flex-wrap: wrap;
-    color: beige;
-    background: cadetblue;
+    color: var(--color-alt1);
+    background: var(--color-main1);
     padding-left: 20rem;
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -90,8 +95,8 @@ html {
 .boxalt {
     display: flex;
     flex-wrap: wrap;
-    color:cadetblue;
-    background: beige;
+    color:var(--color-main1);
+    background: var(--color-alt1);
     padding-left: 20rem;
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -102,14 +107,14 @@ html {
 .mapcontainer{
     display: flex;
     flex-wrap: wrap;
-    background-color: beige;
+    background-color: var(--color-alt1);
     margin-top: 100px;
     margin-left: 20%;
     margin-right: 20%;
 }
 
 .mapembed{
-    border: 8px solid cadetblue;
+    border: 8px solid var(--color-main1);
     height: 40vw;
     width: 50%;
 }
@@ -120,7 +125,7 @@ html {
     white-space: wrap;
     height: 40vw;
     width: 50%;
-    border: 8px solid cadetblue;
+    border: 8px solid var(--color-main1);
 }
 
 .entscroller{
@@ -129,18 +134,18 @@ html {
     white-space: wrap;
     height: 600px;
     width: 100%;
-    border: 8px solid beige;
+    border: 8px solid var(--color-alt1);
 }
 
 
 .mapcard{
-    color: cadetblue;
-    background: beige;
+    color: var(--color-main1);
+    background: var(--color-alt1);
 }
 
 .mapcardalt{
-    color: beige;
-    background: cadetblue;
+    color: var(--color-alt1);
+    background: var(--color-main1);
 }
 
 .ent{
@@ -150,12 +155,12 @@ html {
 
 .mapcardimg{
     width: 100%;
-    border: 8px solid beige;
+    border: 8px solid var(--color-alt1);
 }
 
 .mapcardimgalt{
     width: 100%;
-    border: 8px solid cadetblue;
+    border: 8px solid var(--color-main1);
 }
 
 .cardpadclass{
