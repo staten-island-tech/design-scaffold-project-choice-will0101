@@ -54,7 +54,7 @@ html {
     padding-right: 5rem;
     padding: 1rem;
     box-shadow: gray;
-    background: cadetblue;
+    background: var(--color-main1);
 }
 
 .filterbtn {
