@@ -4,9 +4,9 @@ import { gsap } from "gsap";
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".box", {
+gsap.to(".mapcardimg", {
     scrollTrigger: {
-        trigger: ".box",
+        trigger: ".mapcardimg",
         toggleActions: "restart none none none"
     },
     x:400,
