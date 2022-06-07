@@ -14,22 +14,37 @@ gsap.to(".logo", {
 });
 
 gsap.to(".bigphoto", {
-    scale: 1.025,
-    duration:1
+    scrollTrigger: {
+        trigger: ".mapcardimg",
+        scrub: "true",
+        toggleActions: "restart none none none"
+    },
+    y: -100,
 });
 
 gsap.to(".mapcardimg", {
     scrollTrigger: {
         trigger: ".mapcardimg",
+        scrub: "true",
+        toggleActions: "restart none none none"
     },
-    y: -50,
-    duration:.5
+    y: -100,
 });
 
 gsap.to(".gpscrollanim", {
     scrollTrigger: {
-        trigger: ".mapcardimg",
+        trigger: ".gpscrollanim",
+        scrub: "true",
+        toggleActions: "restart none none none"
     },
-    y: -50,
-    duration:.5
+    y: -100,
+});
+
+gsap.to(".mapcontainer", {
+    scrollTrigger: {
+        trigger: ".mapcontainer",
+        scrub: "true",
+        toggleActions: "restart none none none"
+    },
+    y: -100,
 });

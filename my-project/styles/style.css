@@ -85,10 +85,10 @@ html {
     flex-wrap: wrap;
     color: var(--color-alt1);
     background: var(--color-main1);
-    padding-left: 20rem;
+    padding-left: 15%;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    padding-right: 20rem;
+    padding-right: 15%;
     margin-top: 5rem;
 }
 
@@ -97,10 +97,10 @@ html {
     flex-wrap: wrap;
     color:var(--color-main1);
     background: var(--color-alt1);
-    padding-left: 20rem;
+    padding-left: 15%;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    padding-right: 20rem;
+    padding-right: 15%;
     margin-top: 5rem;
 }
 
@@ -128,16 +128,6 @@ html {
     border: 8px solid var(--color-main1);
 }
 
-.entscroller{
-    overflow-y: hidden;
-    overflow-x: scroll;
-    white-space: wrap;
-    height: 600px;
-    width: 100%;
-    border: 8px solid var(--color-alt1);
-}
-
-
 .mapcard{
     color: var(--color-main1);
     background: var(--color-alt1);
@@ -146,11 +136,6 @@ html {
 .mapcardalt{
     color: var(--color-alt1);
     background: var(--color-main1);
-}
-
-.ent{
-    height: 100%;
-    width: 400px;
 }
 
 .mapcardimg{
