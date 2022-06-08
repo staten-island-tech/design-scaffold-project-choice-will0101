@@ -14,7 +14,7 @@ DOMSelectors.checkbox.addEventListener('change', () => {
 
 ScrollTrigger.defaults({
     scrub: "true",
-    toggleActions: "restart none none none"
+    toggleActions: "restart none complete none"
 });
 
 gsap.to(".toptags", {
@@ -25,13 +25,6 @@ gsap.to(".toptags", {
 gsap.to(".logo", {
     x:30,
     duration:1
-});
-
-gsap.to(".bigphoto", {
-    scrollTrigger: {
-        trigger: ".scrolleranim",
-    },
-    y: -200,
 });
  
 gsap.to(".scrolleranim", {
@@ -129,4 +122,23 @@ gsap.to(".left1", {
     },
     y: 5,
     duration: 1
+});
+
+gsap.to(".bigtitle", {
+    scrollTrigger: {
+        trigger: ".bigtitle",
+        scrub: true,
+    },
+    y: -1500,
+    duration: 2,
+});
+
+
+gsap.to(".bigtitle2", {
+    scrollTrigger: {
+        trigger: ".bigtitle2",
+        scrub: true,
+    },
+    y: -2000,
+    duration: 2,
 });

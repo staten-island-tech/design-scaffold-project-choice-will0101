@@ -83,7 +83,8 @@ html {
 }
 
 .bigphoto{
-    width: 100%;
+    height: 100%;
+    width: fill;
 }
 
 
@@ -221,6 +222,31 @@ margin: auto;
 }
 .right1{
     transform: translateY(-300px)
+}
+
+.bigtitle{
+    padding: 1rem;
+    background-color: var(--color-alt1);
+    font-size: 3rem;
+    text-align: right;
+    width: 100%;
+    transform: translateY(-350px)
+}
+
+.bigtitle2{
+    padding: 1rem;
+    background-color: var(--color-alt1);
+    font-size: 3rem;
+    text-align: left;
+    width: 100%;
+    transform: translateY(-350px)
+}
+
+.bigtitlecontainer{
+    
+margin-left: 50%;
+margin-right: 50%;
+width: 100%;
 }
 
 p{
