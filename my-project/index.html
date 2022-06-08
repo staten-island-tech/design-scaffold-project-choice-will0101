@@ -18,12 +18,15 @@
     <header id="top" class="header">
         <button class="logo" id="all2"> <img class="logoimgtop" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/SoHo_logo.svg/1200px-SoHo_logo.svg.png"> </button>
         <div class="toptags">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label class="label" for="checkbox">
+                <a class="filterbtn">Theme</a>
+            </label>
             <a id="alltag" href="#bigphoto" class="filterbtn">Top</a>
             <a id="biotag" href="#bio" class="filterbtn">About</a>
             <a id="maptag" href="#map" class="filterbtn">Map</a>
             <a id="enttag" href="#ent" class="filterbtn">Entertainment</a>
-            <a id="foodtag" href="#food" class="filterbtn">Food</a>
-            <a id="hotelstag" href="#hotels" class="filterbtn">Hotels</a>
+            <a id="foodtag" href="#hotels" class="filterbtn">Hotels</a>
         </div>
     </header>
     <section class="bigphotocontainer" id="bigphoto">
@@ -31,7 +34,7 @@
     </section>
     <section id="bio" class="biowriting">
         <div class="box">
-            <img class="mapcardimg" src="https://imageio.forbes.com/blogs-images/nicoletrilivas/files/2018/09/SoHo-Neighborhood-Birds-Eye-View-1200x667.jpg?fit=bounds&format=jpg&width=960">
+            <img class="mapcardimg scrolleranim" src="https://imageio.forbes.com/blogs-images/nicoletrilivas/files/2018/09/SoHo-Neighborhood-Birds-Eye-View-1200x667.jpg?fit=bounds&format=jpg&width=960">
             <p class="gpscrollanim">
                 The famously arty neighborhood of the ’70s and ’80s has evolved into one of New York City’s prime shopping districts. SoHo (an acronym for South of Houston Street) still features galleries, though these days the work within them tends toward the more high-end commercial—matching the luxury boutiques and independent-designer outposts that characterize the area. Once you’ve had your dose of retail therapy, take a break with a meal at one of the neighborhood’s many excellent restaurants or a drink at one of its elegant boutique hotels.
             </p>
@@ -84,74 +87,68 @@
             </div>
         </div>
     </section>
-    <div id="ent" class="scrollbreak"></div>
+    <div id="ent" class="scrollbreakcard"></div>
     <section class="entcontainer box">
-        <p>
+        <p class="p1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque, dolor porta auctor faucibus, felis nunc facilisis est, non ultrices enim nisi ac quam. Sed sollicitudin, diam vel malesuada imperdiet, mi neque fringilla mauris, a malesuada eros augue a tortor. Nullam maximus varius leo et efficitur. Pellentesque et congue magna. Maecenas arcu nisl, dapibus ac sapien ut, tincidunt consectetur libero. Sed dapibus feugiat justo a blandit. Vestibulum eget rutrum leo, id pretium turpis. Nam accumsan et nibh porttitor faucibus. Nullam vehicula elementum nibh, et tincidunt sem ornare vel. Praesent vel tempus leo. Pellentesque posuere mi purus, ut tristique lorem tempor ut. Nam euismod laoreet arcu, vel tempor enim rhoncus quis. Suspendisse lobortis augue sed odio fringilla lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Nam at turpis sem.
         </p>
         <br>
-        <p>
+        <p class="p2">
             Integer nec nibh eget elit fringilla vehicula at id enim. Aenean nec turpis sapien. Nullam finibus finibus lectus, eu mollis lacus congue quis. Integer a orci lorem. Fusce suscipit vehicula tellus convallis pharetra. Integer ullamcorper enim libero, hendrerit convallis quam rhoncus vel. Fusce feugiat nibh et dolor tincidunt, ut accumsan mi lacinia. Nullam sit amet elit purus. Morbi fermentum at arcu at posuere. Proin ullamcorper vitae dui ut mattis. Mauris nec nisi eu risus rhoncus maximus hendrerit facilisis nulla. Pellentesque in libero sagittis, aliquam massa tempor, feugiat quam.
         </p>
         <br>
-        <p>
+        <p class="p3">
             Praesent pulvinar rutrum dolor ac dictum. Aliquam diam mi, ultricies sit amet tortor at, scelerisque pretium nisl. Suspendisse pretium tempus magna, eget ornare nisi placerat et. Curabitur sit amet viverra elit. Nulla rutrum congue laoreet. Aliquam commodo urna vitae porta commodo. Suspendisse ex sapien, euismod at sollicitudin vitae, porta eu nisl. Sed posuere ligula finibus bibendum pharetra. Cras metus augue, tristique vitae nunc vitae, euismod aliquam nisl. Sed consequat eu libero lobortis varius. Curabitur sagittis nibh purus, eget egestas odio aliquet et. Aliquam maximus neque eu accumsan volutpat. Maecenas pretium urna id dui facilisis mattis. Curabitur interdum lacus lacus, et porttitor magna porttitor tempus. Curabitur cursus, urna vel gravida luctus, orci nulla auctor erat, id vulputate eros est sit amet nibh. Suspendisse potenti.
         </p>
         <br>
-        <p>
+        <p class="p4">
             Mauris feugiat gravida est quis congue. Suspendisse sit amet mi eu justo semper laoreet. In non consequat nulla. Aenean ac laoreet lacus. Phasellus rhoncus rutrum vulputate. Ut iaculis posuere scelerisque. Fusce felis lectus, tincidunt non urna id, dapibus dictum mi. Nulla non congue diam. Donec sagittis mi sit amet ante fermentum, sit amet finibus ex luctus. Morbi ac vestibulum sapien. Curabitur nec convallis felis.
         </p>
         <br>
-        <p>
-            Vivamus eget libero nec nisi fringilla tristique a at lectus. Nunc semper, leo et interdum porta, neque urna porta felis, in commodo erat quam eu augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis libero eget lacinia egestas. Vestibulum vel turpis a purus ultrices vestibulum vel sed augue. Vestibulum scelerisque est nec vehicula auctor. Phasellus odio magna, ultricies sit amet pellentesque non, luctus id magna. Vivamus sit amet sapien nunc.
-        </p>
-    </section>
-    <div id="food" class="scrollbreak"></div>
-    <section class="foodcontainer boxalt">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque, dolor porta auctor faucibus, felis nunc facilisis est, non ultrices enim nisi ac quam. Sed sollicitudin, diam vel malesuada imperdiet, mi neque fringilla mauris, a malesuada eros augue a tortor. Nullam maximus varius leo et efficitur. Pellentesque et congue magna. Maecenas arcu nisl, dapibus ac sapien ut, tincidunt consectetur libero. Sed dapibus feugiat justo a blandit. Vestibulum eget rutrum leo, id pretium turpis. Nam accumsan et nibh porttitor faucibus. Nullam vehicula elementum nibh, et tincidunt sem ornare vel. Praesent vel tempus leo. Pellentesque posuere mi purus, ut tristique lorem tempor ut. Nam euismod laoreet arcu, vel tempor enim rhoncus quis. Suspendisse lobortis augue sed odio fringilla lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Nam at turpis sem.
-        </p>
-        <br>
-        <p>
-            Integer nec nibh eget elit fringilla vehicula at id enim. Aenean nec turpis sapien. Nullam finibus finibus lectus, eu mollis lacus congue quis. Integer a orci lorem. Fusce suscipit vehicula tellus convallis pharetra. Integer ullamcorper enim libero, hendrerit convallis quam rhoncus vel. Fusce feugiat nibh et dolor tincidunt, ut accumsan mi lacinia. Nullam sit amet elit purus. Morbi fermentum at arcu at posuere. Proin ullamcorper vitae dui ut mattis. Mauris nec nisi eu risus rhoncus maximus hendrerit facilisis nulla. Pellentesque in libero sagittis, aliquam massa tempor, feugiat quam.
-        </p>
-        <br>
-        <p>
-            Praesent pulvinar rutrum dolor ac dictum. Aliquam diam mi, ultricies sit amet tortor at, scelerisque pretium nisl. Suspendisse pretium tempus magna, eget ornare nisi placerat et. Curabitur sit amet viverra elit. Nulla rutrum congue laoreet. Aliquam commodo urna vitae porta commodo. Suspendisse ex sapien, euismod at sollicitudin vitae, porta eu nisl. Sed posuere ligula finibus bibendum pharetra. Cras metus augue, tristique vitae nunc vitae, euismod aliquam nisl. Sed consequat eu libero lobortis varius. Curabitur sagittis nibh purus, eget egestas odio aliquet et. Aliquam maximus neque eu accumsan volutpat. Maecenas pretium urna id dui facilisis mattis. Curabitur interdum lacus lacus, et porttitor magna porttitor tempus. Curabitur cursus, urna vel gravida luctus, orci nulla auctor erat, id vulputate eros est sit amet nibh. Suspendisse potenti.
-        </p>
-        <br>
-        <p>
-            Mauris feugiat gravida est quis congue. Suspendisse sit amet mi eu justo semper laoreet. In non consequat nulla. Aenean ac laoreet lacus. Phasellus rhoncus rutrum vulputate. Ut iaculis posuere scelerisque. Fusce felis lectus, tincidunt non urna id, dapibus dictum mi. Nulla non congue diam. Donec sagittis mi sit amet ante fermentum, sit amet finibus ex luctus. Morbi ac vestibulum sapien. Curabitur nec convallis felis.
-        </p>
-        <br>
-        <p>
+        <p class="p5">
             Vivamus eget libero nec nisi fringilla tristique a at lectus. Nunc semper, leo et interdum porta, neque urna porta felis, in commodo erat quam eu augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis libero eget lacinia egestas. Vestibulum vel turpis a purus ultrices vestibulum vel sed augue. Vestibulum scelerisque est nec vehicula auctor. Phasellus odio magna, ultricies sit amet pellentesque non, luctus id magna. Vivamus sit amet sapien nunc.
         </p>
     </section>
     <div id="hotels" class="scrollbreak"></div>
-    <section class="hotelscontainer box">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque, dolor porta auctor faucibus, felis nunc facilisis est, non ultrices enim nisi ac quam. Sed sollicitudin, diam vel malesuada imperdiet, mi neque fringilla mauris, a malesuada eros augue a tortor. Nullam maximus varius leo et efficitur. Pellentesque et congue magna. Maecenas arcu nisl, dapibus ac sapien ut, tincidunt consectetur libero. Sed dapibus feugiat justo a blandit. Vestibulum eget rutrum leo, id pretium turpis. Nam accumsan et nibh porttitor faucibus. Nullam vehicula elementum nibh, et tincidunt sem ornare vel. Praesent vel tempus leo. Pellentesque posuere mi purus, ut tristique lorem tempor ut. Nam euismod laoreet arcu, vel tempor enim rhoncus quis. Suspendisse lobortis augue sed odio fringilla lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Nam at turpis sem.
-        </p>
-        <br>
-        <p>
-            Integer nec nibh eget elit fringilla vehicula at id enim. Aenean nec turpis sapien. Nullam finibus finibus lectus, eu mollis lacus congue quis. Integer a orci lorem. Fusce suscipit vehicula tellus convallis pharetra. Integer ullamcorper enim libero, hendrerit convallis quam rhoncus vel. Fusce feugiat nibh et dolor tincidunt, ut accumsan mi lacinia. Nullam sit amet elit purus. Morbi fermentum at arcu at posuere. Proin ullamcorper vitae dui ut mattis. Mauris nec nisi eu risus rhoncus maximus hendrerit facilisis nulla. Pellentesque in libero sagittis, aliquam massa tempor, feugiat quam.
-        </p>
-        <br>
-        <p>
-            Praesent pulvinar rutrum dolor ac dictum. Aliquam diam mi, ultricies sit amet tortor at, scelerisque pretium nisl. Suspendisse pretium tempus magna, eget ornare nisi placerat et. Curabitur sit amet viverra elit. Nulla rutrum congue laoreet. Aliquam commodo urna vitae porta commodo. Suspendisse ex sapien, euismod at sollicitudin vitae, porta eu nisl. Sed posuere ligula finibus bibendum pharetra. Cras metus augue, tristique vitae nunc vitae, euismod aliquam nisl. Sed consequat eu libero lobortis varius. Curabitur sagittis nibh purus, eget egestas odio aliquet et. Aliquam maximus neque eu accumsan volutpat. Maecenas pretium urna id dui facilisis mattis. Curabitur interdum lacus lacus, et porttitor magna porttitor tempus. Curabitur cursus, urna vel gravida luctus, orci nulla auctor erat, id vulputate eros est sit amet nibh. Suspendisse potenti.
-        </p>
-        <br>
-        <p>
-            Mauris feugiat gravida est quis congue. Suspendisse sit amet mi eu justo semper laoreet. In non consequat nulla. Aenean ac laoreet lacus. Phasellus rhoncus rutrum vulputate. Ut iaculis posuere scelerisque. Fusce felis lectus, tincidunt non urna id, dapibus dictum mi. Nulla non congue diam. Donec sagittis mi sit amet ante fermentum, sit amet finibus ex luctus. Morbi ac vestibulum sapien. Curabitur nec convallis felis.
-        </p>
-        <br>
-        <p>
-            Vivamus eget libero nec nisi fringilla tristique a at lectus. Nunc semper, leo et interdum porta, neque urna porta felis, in commodo erat quam eu augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis libero eget lacinia egestas. Vestibulum vel turpis a purus ultrices vestibulum vel sed augue. Vestibulum scelerisque est nec vehicula auctor. Phasellus odio magna, ultricies sit amet pellentesque non, luctus id magna. Vivamus sit amet sapien nunc.
-        </p>
+    <section class="foodcontainer boxalt2">
+        <div class="flexitems item1">
+            <img class="flexitem left1" src="https://images.trvl-media.com/hotels/4000000/3610000/3606300/3606282/ba5b8d19.jpg?impolicy=resizecrop&rw=1200&ra=fit">
+            <div class="flextext"> <a href="https://goo.gl/maps/qSTSK29pdogypGhX8" target="_blank">NoMo SoHo</a> <br> <br> Just 2.2 mi (3.5 km) from the airport, NoMo SoHo puts you just a 5-minute drive from Washington Square Park and 5th Avenue. Guests can visit the 24-hour fitness center for a workout or grab a bite to eat at NOMO Kitchen, which serves American cuisine and is open for breakfast, lunch, and dinner. A bar/lounge and a terrace are other highlights, and rooms at this luxurious hotel offer up nice touches like Egyptian cotton sheets and down comforters. Fellow travelers like that it's just a short walk to public transportation: Canal St. Station (Lafayette St.) is 3 minutes away and Canal St. Station (Broadway) is 3 minutes.</div>
+            <img class="flexitem right1" src="https://images.trvl-media.com/hotels/4000000/3610000/3606300/3606282/55149ded.jpg?impolicy=resizecrop&rw=1200&ra=fit">
+        </div>
+        <div class="flexitems item1">
+            <img class="flexitem left1" src="https://images.trvl-media.com/hotels/1000000/50000/41200/41198/a77fd2a6.jpg?impolicy=resizecrop&rw=1200&ra=fit">
+            <div class="flextext"> <a href="https://goo.gl/maps/yDv82Tha2ETZqdiu8" target="_blank">Soho Grand Hotel</a> <br> <br> Located 2.4 mi (3.9 km) from the airport, Soho Grand Hotel offers a great location, putting you within a 15-minute walk of New York University and Washington Square Park. Guests indulge in massages, then grab a bite to eat at the restaurant. Other highlights at this luxurious hotel include 3 bars/lounges, a 24-hour fitness center, and a fitness center. The helpful staff and location get good marks from fellow travelers. The property is just a short walk to public transportation: Canal St. Station (W. Broadway) is 2 minutes and Canal St. Station (Varick St.) is 3 minutes.</div>
+            <img class="flexitem right1" src="https://images.trvl-media.com/hotels/1000000/50000/41200/41198/a134a7a0.jpg?impolicy=resizecrop&rw=1200&ra=fit">
+        </div>
+        <div class="flexitems item1">
+            <img class="flexitem left1" src="https://images.trvl-media.com/hotels/13000000/12510000/12503300/12503207/7114da6a.jpg?impolicy=resizecrop&rw=1200&ra=fit">
+            <div class="flextext"> <a href="https://goo.gl/maps/5EQyK2bddpJCaJHJ6" target="_blank">11 Howard</a> <br> <br> Located 4.2 mi (6.7 km) from the airport, 11 Howard features a nightclub and puts you just a 5-minute drive from Wall Street. You can grab a bite to eat at the restaurant or wind down at the end of the day with a drink from the bar/lounge. Rooms at this luxurious hotel offer 24-hour room service, flat-screen TVs, and minibars. Fellow travelers say good things about the helpful staff and location. The property is just a short walk to public transportation: Canal St. Station (Lafayette St.) is steps away and Canal St. Station (Broadway) is 3 minutes.</div>
+            <img class="flexitem right1" src="https://images.trvl-media.com/hotels/13000000/12510000/12503300/12503207/bd701259.jpg?impolicy=resizecrop&rw=1200&ra=fit">
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footercard">
+            Footer. <br><br>
+            Footer. <br><br>
+            Footer. <br><br>
+            Footer. <br><br>
+        </div>
+        <div class="footercard">
+            Made by Will Corwin. <br><br>
+            Special thanks to Mr. Whalen
+            for having me realize designing a website isn't so hard to do after all.<br><br>
+            Maybe I will use these skills in the future.
+        </div>
+        <div class="footercard">
+            Footer. <br> <br>
+            GSAP is cool. <br> <br>
+            Footer. <br> <br>
+            Footer.
+        </div>
     </section>
     <script src="./js/main.js" type="module"></script>
 </body>
-<input class="checkbox">
+
 
 </html>

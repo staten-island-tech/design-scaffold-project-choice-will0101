@@ -3,6 +3,22 @@
     --color-alt1: beige;
 }
 
+body {
+    --color-main1: rgb(48, 64, 65);
+    --color-alt1: rgb(247, 247, 236);
+    --color-tag1: rgb(253, 253, 220);
+}
+
+body.dark {
+    --color-main1: rgb(61, 61, 61);
+    --color-alt1: rgb(182, 182, 182);
+    --color-tag1: rgb(209, 209, 209);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
 
 * {
     font-family: 'Patua One', cursive;
@@ -17,24 +33,19 @@ html {
     scroll-behavior: smooth;
 }
 
-.all, .checkbox {
+.all {
     background-color: var(--color-alt1);
+    overflow-x: hidden;
 }
 
 .scrollbreak{
-    height: 50px;
+    height: 200px;
     background-color: var(--color-alt1);
 }
 
 .scrollbreakcard{
-    height: 50px;
+    height: 200px;
     background-color: var(--color-main1);
-}
-
-.scrollbreakcardaltvert{
-    width: 50px;
-    height: 100%;
-    background-color: var(--color-alt1);
 }
 
 .logo {
@@ -64,15 +75,11 @@ html {
 }
 
 .filterbtn:hover {
-    background: burlywood;
+    background: var(--color-tag1);
 }
 
 .logoimgtop {
     height: 20px;
-}
-
-.favstar {
-    height: 15px;
 }
 
 .bigphoto{
@@ -89,7 +96,6 @@ html {
     padding-top: 10rem;
     padding-bottom: 10rem;
     padding-right: 15%;
-    margin-top: 5rem;
 }
 
 .boxalt {
@@ -102,6 +108,34 @@ html {
     padding-bottom: 10rem;
     padding-right: 15%;
     margin-top: 5rem;
+}
+
+.boxalt2 {
+    display: flex;
+    flex-wrap: wrap;
+    color:var(--color-main1);
+    background: var(--color-alt1);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color:var(--color-alt1);
+    background: var(--color-main1);
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    max-width: 100%;
+}
+
+.footercard{
+    max-width: 20rem;
 }
 
 .mapcontainer{
@@ -153,6 +187,40 @@ html {
     padding-bottom: 2%;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.flexitems {
+    display: flex;
+    flex-wrap: wrap;
+    color:var(--color-main1);
+    background: var(--color-alt1);
+    margin: auto;
+    padding-bottom: 5rem;
+    width: 25rem;
+margin: auto;
+}
+
+.flexitem{
+    width: 25rem;
+    height: 20rem;
+    border: 8px solid var(--color-main1);
+}
+
+.flextext{
+    width: 29rem;
+    height: 20rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    color:var(--color-alt1);
+    background: var(--color-main1);
+}
+
+.left1{
+    transform: translateY(300px)
+}
+.right1{
+    transform: translateY(-300px)
 }
 
 p{
