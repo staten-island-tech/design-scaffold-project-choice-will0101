@@ -44,7 +44,7 @@ html {
 }
 
 .scrollbreakcard{
-    height: 200px;
+    height: 100px;
     background-color: var(--color-main1);
 }
 
@@ -110,6 +110,7 @@ html {
 .boxalt2 {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     color:var(--color-main1);
     background: var(--color-alt1);
     margin: 0px 5% 0px 5%;
@@ -291,6 +292,10 @@ p{
     .hoveralbum{
         height: 500px;
     }
+    .bigphoto{
+        height: 900px;
+        width: fit-content;
+    }
   }
 
   @media (max-width: 765px) {
@@ -308,6 +313,18 @@ p{
     .hoveralbum{
         height: 300px;
     }
+    .mapembed{
+        width: 100%;
+        min-height: 400px;
+    }
+    .mapscroller{
+        width: 100%;
+        min-height: 400px;
+    }
+    .bigphoto{
+        height: 700px;
+        width: fit-content;
+    }
   }
 
   @media (max-width: 582px) {
@@ -323,5 +340,41 @@ p{
     }
     body {
         font-size: 0.8rem;
+    }
+    .flexitem{
+        width: 20rem;
+        height: 15rem;
+    }
+    .flextext{
+        width: 20rem;
+        height: 16rem;
+    }
+    .bigphoto{
+        height: 500px;
+        width: fit-content;
+    }
+  }
+
+  @media (max-width: 382px) {
+    .bigtitle {
+        font-size: .5rem;
+        transform: translateY(-150px);
+        padding: 0.25rem;
+    }
+    .bigtitle2 {
+        font-size: .5rem;
+        padding: 0.25rem;
+    }
+    body {
+        font-size: 0.6rem;
+    }
+    .flexitem{
+        width: 80%;
+        height: 15rem;
+    }
+    .flextext{
+        width: 80%;
+        height: auto;
+        padding-bottom: 1rem;
     }
   }
