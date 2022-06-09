@@ -7,12 +7,16 @@ const DOMSelectors = {
     checkbox: document.querySelector('.checkbox'),
     wrap: document.querySelector('.hoveralbum'),
     img1: document.querySelector('.img-1'),
-    img2: document.querySelector('.img-2')
+    img2: document.querySelector('.img-2'),
+    bigtitle: document.querySelector('.bigtitle'),
+    bigtitle2: document.querySelector('.bigtitle2')
 }
 
 DOMSelectors.checkbox.addEventListener('change', () => {
     document.body.classList.toggle('dark');
 });
+
+
 
 ScrollTrigger.defaults({
     scrub: "true",
@@ -185,3 +189,19 @@ DOMSelectors.wrap.addEventListener("mouseleave", () => {
     gsap.to(".img-1", {duration: .5, width: "50%"});
     gsap.to(".img-2", {duration: .5, width: "50%"});
 });
+
+DOMSelectors.bigtitle.addEventListener("mouseenter", () => {
+    gsap.to(".titlecontainer", {duration: .5, opacity:"0"});
+})
+
+DOMSelectors.bigtitle.addEventListener("mouseleave", () => {
+    gsap.to(".titlecontainer", {duration: .5, opacity:"1"});
+})
+
+DOMSelectors.bigtitle2.addEventListener("mouseenter", () => {
+    gsap.to(".titlecontainer", {duration: .5, opacity:"0"});
+})
+
+DOMSelectors.bigtitle2.addEventListener("mouseleave", () => {
+    gsap.to(".titlecontainer", {duration: .5, opacity:"1"});
+})

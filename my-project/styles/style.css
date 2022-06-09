@@ -1,10 +1,5 @@
-:root {
-    --color-main1: cadetblue;
-    --color-alt1: beige;
-}
-
 body {
-    --color-main1: rgb(48, 64, 65);
+    --color-main1: rgb(40, 45, 66);
     --color-alt1: rgb(247, 247, 236);
     --color-tag1: rgb(253, 253, 220);
 }
@@ -13,6 +8,14 @@ body.dark {
     --color-main1: rgb(61, 61, 61);
     --color-alt1: rgb(182, 182, 182);
     --color-tag1: rgb(209, 209, 209);
+}
+
+.bigtitle > h1 {
+    color:var(--color-main1);
+}
+
+.bigtitle2 > h1 {
+    color:var(--color-main1);
 }
 
 .checkbox {
@@ -49,6 +52,8 @@ html {
 }
 
 .logo {
+    scale: 100%;
+    height: 50px;
     background: var(--color-main1);
     align-content: space-between;
 }
@@ -113,7 +118,6 @@ html {
     width: 100%;
     color:var(--color-main1);
     background: var(--color-alt1);
-    margin: 0px 5% 0px 5%;
 }
 
 .footer {
@@ -283,11 +287,11 @@ p{
   @media (max-width: 1120px) {
     .bigtitle {
         font-size: 2rem;
-        transform: translateY(-350px)
+        transform: translateY(-450px)
     }
     .bigtitle2 {
         font-size: 2rem;
-        transform: translateY(-250px)
+        transform: translateY(-350px)
     }
     .hoveralbum{
         height: 500px;
