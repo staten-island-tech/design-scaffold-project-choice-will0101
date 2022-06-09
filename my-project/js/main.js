@@ -5,7 +5,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const DOMSelectors = {
     checkbox: document.querySelector('.checkbox'),
-
+    wrap: document.querySelector('.hoveralbum'),
+    img1: document.querySelector('.img-1'),
+    img2: document.querySelector('.img-2')
 }
 
 DOMSelectors.checkbox.addEventListener('change', () => {
@@ -162,4 +164,24 @@ gsap.to(".left3", {
     },
     y: 5,
     duration: 1
+});
+
+/* hover */
+
+gsap.set(".img-1", {width:"50%"});
+gsap.set(".img-2", {width:"50%"});
+
+DOMSelectors.img1.addEventListener("mouseenter", () => {
+    gsap.to(".img-1", {duration: .5, width: "60%"});
+    gsap.to(".img-2", {duration: .5, width: "40%"});
+});
+
+DOMSelectors.img2.addEventListener("mouseenter", () => {
+    gsap.to(".img-1", {duration: .5, width: "40%"});
+    gsap.to(".img-2", {duration: .5, width: "60%"});
+});
+
+DOMSelectors.wrap.addEventListener("mouseleave", () => {
+    gsap.to(".img-1", {duration: .5, width: "50%"});
+    gsap.to(".img-2", {duration: .5, width: "50%"});
 });

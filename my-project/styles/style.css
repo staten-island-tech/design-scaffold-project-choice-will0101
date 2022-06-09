@@ -140,7 +140,7 @@ html {
 
 .mapembed{
     border: 8px solid var(--color-main1);
-    height: 40vw;
+    height: 50vw;
     width: 50%;
 }
 
@@ -148,7 +148,7 @@ html {
     overflow-y: scroll;
     overflow-x: hidden;
     white-space: wrap;
-    height: 40vw;
+    height: 50vw;
     width: 50%;
     border: 8px solid var(--color-main1);
 }
@@ -161,6 +161,19 @@ html {
 .mapcardalt{
     color: var(--color-alt1);
     background: var(--color-main1);
+}
+
+.hoveralbum {
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+.mapcardimgtop{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 8px solid var(--color-alt1);
 }
 
 .mapcardimg{
@@ -275,6 +288,9 @@ p{
         font-size: 2rem;
         transform: translateY(-250px)
     }
+    .hoveralbum{
+        height: 500px;
+    }
   }
 
   @media (max-width: 765px) {
@@ -289,6 +305,9 @@ p{
     .hide {
         display: none;
     }
+    .hoveralbum{
+        height: 300px;
+    }
   }
 
   @media (max-width: 582px) {
@@ -301,5 +320,8 @@ p{
         font-size: 1rem;
         transform: translateY(-100px);
         padding: 0.25rem;
+    }
+    body {
+        font-size: 0.8rem;
     }
   }
