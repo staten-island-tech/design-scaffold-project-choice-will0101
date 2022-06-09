@@ -78,7 +78,8 @@ html {
 .filterbtn {
     background: var(--color-alt1);
     color: var(--color-main1);
-    padding: 1rem
+    padding: 1rem;
+    text-decoration: none;
 }
 
 .filterbtn:hover {
