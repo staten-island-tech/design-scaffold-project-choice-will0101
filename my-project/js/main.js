@@ -14,7 +14,7 @@ DOMSelectors.checkbox.addEventListener('change', () => {
 
 ScrollTrigger.defaults({
     scrub: "true",
-    toggleActions: "restart none complete none"
+    toggleActions: "restart none none none"
 });
 
 gsap.to(".toptags", {

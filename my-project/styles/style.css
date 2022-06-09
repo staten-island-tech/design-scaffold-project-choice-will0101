@@ -54,6 +54,7 @@ html {
 }
 
 .header {
+    height: 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -66,9 +67,7 @@ html {
 }
 
 .toptags {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: left;
+    transform: translateY(14px);
 }
 
 .filterbtn {
@@ -87,7 +86,7 @@ html {
 
 .bigphoto{
     height: 100%;
-    width: fill;
+    width: stretch;
 }
 
 
@@ -203,6 +202,11 @@ html {
     background: var(--color-main1);
 }
 
+.link {
+    color: var(--color-alt1);
+    font-size: 1.5rem;
+}
+
 .left1{
     transform: translateY(300px)
 }
@@ -260,6 +264,8 @@ p{
     margin-top: 60px;
   }
 
+/* fun media queries */
+
   @media (max-width: 1120px) {
     .bigtitle {
         font-size: 2rem;
@@ -279,5 +285,21 @@ p{
     .bigtitle2 {
         font-size: 1.5rem;
         transform: translateY(-200px)
+    }
+    .hide {
+        display: none;
+    }
+  }
+
+  @media (max-width: 582px) {
+    .bigtitle {
+        font-size: 1rem;
+        transform: translateY(-150px);
+        padding: 0.25rem;
+    }
+    .bigtitle2 {
+        font-size: 1rem;
+        transform: translateY(-100px);
+        padding: 0.25rem;
     }
   }
