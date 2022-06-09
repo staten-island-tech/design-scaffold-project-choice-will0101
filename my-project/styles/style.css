@@ -61,11 +61,14 @@ html {
     z-index: 2;
     display: flex;
     justify-content: space-between;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding: 1rem;
     box-shadow: gray;
     background: var(--color-main1);
+}
+
+.toptags {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: left;
 }
 
 .filterbtn {
@@ -93,10 +96,7 @@ html {
     flex-wrap: wrap;
     color: var(--color-alt1);
     background: var(--color-main1);
-    padding-left: 15%;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    padding-right: 15%;
+    padding: 10rem 15% 10rem 15%;
 }
 
 .boxalt {
@@ -104,11 +104,8 @@ html {
     flex-wrap: wrap;
     color:var(--color-main1);
     background: var(--color-alt1);
-    padding-left: 15%;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    padding-right: 15%;
-    margin-top: 5rem;
+    padding: 10rem 0 10rem 0;
+    margin: 5rem 5% 0px 5%;
 }
 
 .boxalt2 {
@@ -116,8 +113,7 @@ html {
     flex-wrap: wrap;
     color:var(--color-main1);
     background: var(--color-alt1);
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0px 5% 0px 5%;
 }
 
 .footer {
@@ -128,10 +124,7 @@ html {
     justify-content: space-around;
     color:var(--color-alt1);
     background: var(--color-main1);
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding: 4rem 15% 4rem 15%;
     max-width: 100%;
 }
 
@@ -143,9 +136,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--color-alt1);
-    margin-top: 100px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 3rem 10% 0px 10%;
 }
 
 .mapembed{
@@ -184,10 +175,7 @@ html {
 }
 
 .cardpadclass{
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 2% 5% 2% 5%;
 }
 
 .flexitems {
@@ -198,7 +186,7 @@ html {
     margin: auto;
     padding-bottom: 5rem;
     width: 25rem;
-margin: auto;
+    margin: auto;
 }
 
 .flexitem{
@@ -210,9 +198,7 @@ margin: auto;
 .flextext{
     width: 29rem;
     height: 20rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
+    padding: 1rem 1rem 0px 1rem;
     color:var(--color-alt1);
     background: var(--color-main1);
 }
@@ -224,13 +210,27 @@ margin: auto;
     transform: translateY(-300px)
 }
 
+.left2{
+    transform: translateY(300px)
+}
+.right2{
+    transform: translateY(-300px)
+}
+
+.left3{
+    transform: translateY(300px)
+}
+.right3{
+    transform: translateY(-300px)
+}
+
 .bigtitle{
     padding: 1rem;
     background-color: var(--color-alt1);
     font-size: 3rem;
     text-align: right;
     width: 100%;
-    transform: translateY(-350px)
+    transform: translateY(-550px)
 }
 
 .bigtitle2{
@@ -239,14 +239,12 @@ margin: auto;
     font-size: 3rem;
     text-align: left;
     width: 100%;
-    transform: translateY(-350px)
+    transform: translateY(-450px)
 }
 
-.bigtitlecontainer{
-    
-margin-left: 50%;
-margin-right: 50%;
-width: 100%;
+.bigtitlecontainer{  
+    margin: 0px 50% 0px 50%;
+    width: 100%;
 }
 
 p{
@@ -260,4 +258,26 @@ p{
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+  }
+
+  @media (max-width: 1120px) {
+    .bigtitle {
+        font-size: 2rem;
+        transform: translateY(-350px)
+    }
+    .bigtitle2 {
+        font-size: 2rem;
+        transform: translateY(-250px)
+    }
+  }
+
+  @media (max-width: 765px) {
+    .bigtitle {
+        font-size: 1.5rem;
+        transform: translateY(-250px)
+    }
+    .bigtitle2 {
+        font-size: 1.5rem;
+        transform: translateY(-200px)
+    }
   }

@@ -124,21 +124,42 @@ gsap.to(".left1", {
     duration: 1
 });
 
-gsap.to(".bigtitle", {
+gsap.to(".right2", {
     scrollTrigger: {
-        trigger: ".bigtitle",
-        scrub: true,
+        trigger: ".left2",
+        scrub: false,
+        toggleActions: "restart none complete none"
     },
-    y: -1500,
-    duration: 2,
+    y: -5,
+    duration: 1
 });
 
-
-gsap.to(".bigtitle2", {
+gsap.to(".left2", {
     scrollTrigger: {
-        trigger: ".bigtitle2",
-        scrub: true,
+        trigger: ".left2",
+        scrub: false,
+        toggleActions: "restart none complete none"
     },
-    y: -2000,
-    duration: 2,
+    y: 5,
+    duration: 1
+});
+
+gsap.to(".right3", {
+    scrollTrigger: {
+        trigger: ".left3",
+        scrub: false,
+        toggleActions: "restart none complete none"
+    },
+    y: -5,
+    duration: 1
+});
+
+gsap.to(".left3", {
+    scrollTrigger: {
+        trigger: ".left3",
+        scrub: false,
+        toggleActions: "restart none complete none"
+    },
+    y: 5,
+    duration: 1
 });
